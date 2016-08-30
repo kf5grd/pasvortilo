@@ -1,0 +1,7 @@
+pasvortilo.py
+Pasvortilo.egg-info/PKG-INFO
+Pasvortilo.egg-info/SOURCES.txt
+Pasvortilo.egg-info/dependency_links.txt
+Pasvortilo.egg-info/entry_points.txt
+Pasvortilo.egg-info/requires.txt
+Pasvortilo.egg-info/top_level.txt
