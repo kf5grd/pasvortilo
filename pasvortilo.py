@@ -38,18 +38,15 @@ def derive_length(md5_string):
 def genpw(md5_string, length, punct_mark):
     i=0
     uc_count=0
-    ucbuff=''
     pwbuff=''
     for c in md5_string:
         if i == length:
-            ucbuff = ucbuff + str(uc_count)
             pwbuff = pwbuff + punct_mark
             i+=1
             uc_count=0
         elif i == (length*2)+1:
             break
         else:
-            ucbuff = ucbuff + str(uc_count)
             if c.isalpha() == True and uc_count == 0:
                 c = c.upper()
                 uc_count=1
@@ -87,7 +84,6 @@ def cli(password, site, format, length, verbose):
     if verbose:
         print("")
         print("MD5:    %s" % xmd5)
-        print("ucbuff: %s" % ucbuff)
         print("Format: %s" % format)
         print("Length: %d, Derived: %s" % (length, str(length_derived)))
 
