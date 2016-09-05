@@ -11,7 +11,7 @@
 ## Installation
 
 ><pre>
->$ python setup.py
+># python setup.py install
 ></pre>
 <hr>
 
