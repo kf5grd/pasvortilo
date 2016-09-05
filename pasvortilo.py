@@ -64,12 +64,12 @@ def genpw(md5_string, length, punct_mark):
               help='Number of characters on each side of the punctuation character (Min: 4, Max: 18, Default: derived)')
 @click.option('--password', '-p',
               prompt=True,
-	      hide_input=True,
-	      confirmation_prompt=True,
-	      help='Base password used to salt the hash. Leave blank to be prompted at runtime')
+              hide_input=True,
+              confirmation_prompt=True,
+              help='Base password used to salt the hash. Leave blank to be prompted at runtime')
 @click.option('--verbose', '-v',
               is_flag=True,
-	      help='Enable verbose output')
+              help='Enable verbose output')
 def cli(password, site, format, length, verbose):
     """Generate secure passwords which are unique to each system you use, and do not need to be memorized."""
     xmd5 = md5_enc(format_str(password,site,format))
